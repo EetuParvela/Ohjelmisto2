@@ -22,6 +22,7 @@ class Auto:
 autot = []
 for i in range(10):
     auto = Auto(f"ABC-{i + 1}")
+    auto.nopeus = random.randint(100, 200)
     autot.append(auto)
 
 while auto.matka <= 10000:
