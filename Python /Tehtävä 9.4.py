@@ -36,6 +36,3 @@ for auto in autot:
     print(f"Auto {auto.rekisteritunnus} tiedot.\n"
           f"Auton nopeus on: {auto.nopeus} km/h.\n"
           f"Auton kulkema matka: {auto.matka} km.\n")
-
-
-
