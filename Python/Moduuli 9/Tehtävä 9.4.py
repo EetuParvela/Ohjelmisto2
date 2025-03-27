@@ -22,6 +22,7 @@ class Auto:
 autot = []
 for i in range(10):
     auto = Auto(f"ABC-{i + 1}")
+    auto.nopeus = random.randint(100, 200)
     autot.append(auto)
 
 while auto.matka <= 10000:
@@ -36,6 +37,3 @@ for auto in autot:
     print(f"Auto {auto.rekisteritunnus} tiedot.\n"
           f"Auton nopeus on: {auto.nopeus} km/h.\n"
           f"Auton kulkema matka: {auto.matka} km.\n")
-
-
-
