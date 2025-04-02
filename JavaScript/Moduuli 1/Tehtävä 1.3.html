@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 id="target"></h1>
+    <script>
+        const number_1 = parseInt(prompt("Anna ensimmäinen numero: "))
+        const number_2 = parseInt(prompt("Anna toinen numero: "))
+        const number_3 = parseInt(prompt("Anna kolmas numero: "))
+        const sum = number_1 + number_2 + number_3
+        const product = number_1 * number_2 * number_3
+        const average = (sum / 3)
+        document.querySelector('#target').innerHTML = 'Lukujen summa on : ' + sum + '. Lukujen tulo on ' + product + '. ' +
+            'Lukujen keskiarvo on ' + average
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1 id='target'></h1>
+  <script>
+    const answer = confirm('Should I calculate the square root?')
+    if (answer) {
+      const number = parseInt(prompt('Syötä numero: '))
+      document.querySelector('#target').innerHTML = number + '. neliöjuuri on ' + Math.sqrt(number);
+    }
+    else {
+      document.querySelector('#target').innerHTML = 'The square root was not calculated.'
+    }
+  </script>
+</body>
+</html>

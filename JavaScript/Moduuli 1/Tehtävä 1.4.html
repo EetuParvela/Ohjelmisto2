@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1 id="target"></h1>
+  <script>
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * max);
+    }
+
+    const name = prompt('Syötä nimesi: ')
+    let random_number = getRandomInt(4)
+    switch (random_number) {
+      case 1:
+        house = 'Gryffindor';
+        break;
+      case 2:
+        house = 'Slytherin';
+        break;
+      case 3:
+        house = 'Hufflepuff';
+        break;
+      case 4:
+        house = 'Ravenclaw';
+        break;
+    }
+    document.querySelector('#target').innerHTML = name + ', you are ' + house + '.';
+  </script>
+</body>
+</html>
