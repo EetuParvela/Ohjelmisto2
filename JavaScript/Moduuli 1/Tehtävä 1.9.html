@@ -9,11 +9,16 @@
 <script>
   const number = parseInt(prompt('Syötä kokonaisluku: '));
   const output = document.querySelector('#target');
+  let isPrime = true;
 
-  for (let i = 2; i <= Math.sqrt(number); i++) {
-    if (number % i === 0) {
-      isPrime = false;
-      break;
+  if (number < 2) {
+    isPrime = false;
+  } else {
+    for (let i = 2; i <= Math.sqrt(number); i++) {
+      if (number % i === 0) {
+        isPrime = false;
+        break;
+      }
     }
   }
 
