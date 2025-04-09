@@ -5,11 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-    <ul id='target'>
+    <ul id='target'></ul>
+<script>
+  startYear = parseInt(prompt('Anna ensimmäinen vuosiluku: '));
+  endYear = parseInt(prompt('Anna toinen vuosiluku: '));
+  const years = document.getElementById('target');
 
-    </ul>
-    <script>
-
-    </script>
+  for (let year = startYear; year <= endYear; year++) {
+    if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
+      const listItem = document.createElement('li');
+      listItem.textContent = year.toString();
+      years.appendChild(listItem);
+    }
+  }
+</script>
 </body>
 </html>

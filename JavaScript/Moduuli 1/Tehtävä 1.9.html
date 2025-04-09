@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prime Checker</title>
+</head>
+<body>
+<h1 id='target'></h1>
+<script>
+  const number = parseInt(prompt('Syötä kokonaisluku: '));
+  const output = document.querySelector('#target');
+
+  for (let i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i === 0) {
+      isPrime = false;
+      break;
+    }
+  }
+
+  if (isPrime) {
+    output.innerHTML = number + ' on alkuluku.';
+  } else {
+    output.innerHTML = number + ' ei ole alkuluku.';
+  }
+</script>
+</body>
+</html>
