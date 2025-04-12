@@ -19,7 +19,6 @@ body {
     align-items: center;
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
     padding: 15px 10%;
     background: #595959;
@@ -47,6 +46,11 @@ body {
 
 .nav-bar ul li:hover {
     transform: translateY(-1px);
+}
+
+.nav-bar img {
+    width: 200px;
+    height: 80px;
 }
 
 .container {
