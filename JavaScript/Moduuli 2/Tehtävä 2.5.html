@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let numberList = [];
+  while (true) {
+    let userInput = parseInt(prompt('Syötä numero'));
+
+    if (numberList.includes(userInput)) {
+      break;
+    } else {
+      numberList.push(userInput)
+    }
+  }
+
+  numberList.sort()
+
+  numberList.forEach(number => console.log(number))
+
+</script>
+</body>
+</html>

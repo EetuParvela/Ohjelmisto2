@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id='target'></ul>
+<script>
+  let nameList = document.getElementById('target');
+  let dogNames = [];
+
+  for (let i = 0; i < 6; i++) {
+    name = prompt(`Anna ${i + 1}. koiran nimi`);
+    dogNames.push(name);
+  }
+
+  dogNames.sort().reverse();
+
+  dogNames.forEach(name => {
+    let listElement = document.createElement('li');
+    listElement.textContent = name;
+    nameList.appendChild(listElement);
+  });
+</script>
+</body>
+</html>
